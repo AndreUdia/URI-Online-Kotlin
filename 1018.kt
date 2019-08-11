@@ -1,5 +1,9 @@
 import java.util.*
 
+/*
+    Created by Cabomaldade - André Vasconcelos Souto
+ */
+
 fun main(args: Array<String>) {
 
     val reader = Scanner(System.`in`)
@@ -33,9 +37,8 @@ fun main(args: Array<String>) {
 
     for(i in bankNotes.indices){
         quantity[i] = countNotes(bankNotes[i])
-        val tempQuantity = quantity[i]
-        val tempBankNote = bankNotes[i]
-        println("$tempQuantity nota(s) de R$ $tempBankNote,00")
+        println("${quantity[i]} nota(s) de R$ ${bankNotes[i]},00")
     }
+
 
 }

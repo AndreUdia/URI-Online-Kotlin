@@ -1,3 +1,7 @@
+/*
+    Created by Cabomaldade - André Vasconcelos Souto
+ */
+
 import java.util.*
 import kotlin.math.pow
 
