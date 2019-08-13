@@ -22,24 +22,24 @@ fun main(args: Array<String>) {
     println("Media: %.1f".format(average).replace(",", "."))
 
     // check if is approved exam reproved
-    if (average >= 7.0 ) {
-        println("Aluno aprovado.")
-    } else if (average < 5) {
-        println("Aluno reprovado.")
-    } else {
-        println("Aluno em exame.")
+    when {
+        average >= 7.0 -> println("Aluno aprovado.")
+        average < 5 -> println("Aluno reprovado.")
+        else -> {
+            println("Aluno em exame.")
 
-        val n5 = reader.nextFloat().absoluteValue
+            val n5 = reader.nextFloat().absoluteValue
 
-        println("Nota do exame: %.1f".format(n5).replace(",", "."))
+            println("Nota do exame: %.1f".format(n5).replace(",", "."))
 
-        val average2 = (average + n5) / 2
+            val average2 = (average + n5) / 2
 
-        if( average2 >= 5){
-            println("Aluno aprovado.")
-        } else{
-            println("Aluno reprovado.")
+            if( average2 >= 5){
+                println("Aluno aprovado.")
+            } else{
+                println("Aluno reprovado.")
+            }
+            println("Media final: %.1f".format(average2).replace(",", "."))
         }
-        println("Media final: %.1f".format(average2).replace(",", "."))
     }
 }
