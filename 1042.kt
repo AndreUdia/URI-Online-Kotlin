@@ -4,7 +4,7 @@
 
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
 
     val reader = Scanner(System.`in`)
     reader.useLocale(Locale.ENGLISH)
