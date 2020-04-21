@@ -5,15 +5,14 @@ package com.cabomaldade.strings
 
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
 
     val reader = Scanner(System.`in`)
     reader.useLocale(Locale.ENGLISH)
-    var condition = ""
-    var tests = mutableListOf<String>()
+    val tests = mutableListOf<String>()
 
     while(true) {
-        var line = reader.nextLine()
+        val line = reader.nextLine()
         if (line == "0 0") {
             break
         }
