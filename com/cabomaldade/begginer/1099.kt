@@ -3,8 +3,6 @@ package com.cabomaldade.begginer/*
     Tecnólogo em Sistemas Para Internet - IFTM - Uberlândia - MG
  */
 
-Not Yet Approved
-
 import java.util.*
 
 fun main(args: Array<String>) {
@@ -29,7 +27,7 @@ fun main(args: Array<String>) {
             }
             println(sum)
         } else if (num1 > num2) {
-            for(i in (num1 - 1 downTo num2 + 1) {
+            for(i in num1 - 1 downTo num2 + 1) {
                 var temp =  if (i % 2 != 0) i else 0
                 sum += temp
             }
